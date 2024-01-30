@@ -1,10 +1,70 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-  </head>
-  <body>
-    <h1>Hello, Q&A!</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.sass'>
+    <title></title> 🤑 Finance — Get the latest info for your financial desicions</title>
+</head>
+<body>
+    <div class="container">
+        <!--Header-->
+        <header class="header">
+            <div class="header__logo"><img class="header__logo-img" src="img/finance-logo.svg" alt="Finance Logo" /></div>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#news">News</a>
+                <a class="header__nav-link" href="#">Join maillist</a>
+                <a class="header__nav-link" href="#">Contact us</a>
+            </nav>
+        </header>
+        <div class="spacer"></div>
+        
+        <!--Title-->
+        <div class="title-block">
+            <div class="title-block__widgets">
+                <div class="currency-widget widget-style"><span>$USD exchange rate = </span><span class="currency-widget-eur">EUR €0.92 </span><span class="currency-widget-uah">UAH ₴36.90</span></div>
+                <div class="subscribe-widget widget-style">
+                    <div class="subscribe-widget__title">Join our mailing list</div>
+                    <div class="subscribe-widget__description">Get the latest important news right into your inbox</div>
+                    <form class="subscribe-widget__form" action="/form-url" method="post">
+                        <div class="input-container"><input class="subscribe-widget__input" type="email" placeholder="Email Address" /></div><button class="subscribe-widget__button" type="submit"></button></form>
+                </div>
+            </div>
+            <div class="title-block__visual">
+                <lottie-player src="https://lottie.host/488883c8-f92c-45a7-ab8a-7bb0b3ea497a/j1nHCJPSui.json" background="background" speed="2" direction="1" mode="normal" loop="loop" autoplay="autoplay"></lottie-player>
+            </div>
+        </div>
+
+        <!--News-->
+        <h2 class="section-title">Latest financial news</h2>
+        <div class="spacer"></div>
+        <div class="latest-news" id="news">
+            <div class="card-news">
+                <h2 class="card-news__title">Oil Prices Surge Amid Supply Concerns</h2>
+                <p class="card-news__date">1 hour ago</p>
+                <p class="card-news__description">Rising geopolitical tensions and supply disruptions contribute to a sharp increase in global oil prices, raising concerns about inflationary pressures.</p>
+                <a class="card-news__link" href="#">Read More</a>
+            </div>
+        </div>
+
+
+        <div class="cookie-alert">
+          <h3 class="cookie-alert__header">Our website uses  cookies</h3>
+          <p class="cookie-alert_text">To offer you the best, we always use cookies. If you agree, simply click 'Accept all cookies' to continue your adventure on our website.</p>
+          <button class="cookie-alert__button">Aceept all Cookies</button>
+        </div>
+
+        
+        <div class="footer">
+            <div class="spacer">
+                <h6 class="footer__content">
+                    This website is a part of PRJCTR Course
+                </h6>
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
 </html>
